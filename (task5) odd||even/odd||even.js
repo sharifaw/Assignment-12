@@ -1,6 +1,8 @@
-const num = [1,2,-3,9,-6,-5,4,8,0];
-console.log("is Even ",isEven(num));
-console.log("is Odd ",isOdd(num));
+const number = [1,2,-3,9,-6,-5,4,8,0];
+
+console.log("is Even ",isEven(number));
+
+console.log("is Odd ",isOdd(number));
 // for (let int = 0; int < num.length; int++) {
 //     if (num[int] %2 ==0) {
 //         console.log(num[int]," is even");
@@ -25,10 +27,10 @@ console.log("is Odd ",isOdd(num));
 // }
 // }
 
-function isEven(even) {
-    return even = even.filter(item => (item % 2 == 0));
+function isEven(num) {
+    return num = num.filter(item => (item % 2 == 0));
 }
 
-function isOdd(Odd) {
-    return Odd = Odd.filter(item => (item % 2 == 1));
+function isOdd(num) {
+    return num = num.filter(item => (item % 2 == 1));
 }

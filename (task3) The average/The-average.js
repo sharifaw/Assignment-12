@@ -1,5 +1,6 @@
 let numbers = [5,3,1,0,-3,-6,-12,-13,-30,-5,-6,7,8,9,10,11,12,13,14,15];
-console.log(avg(numbers));
+
+console.log(getAvg(numbers));
 
 // let total = 0;
 // let avg = 0;
@@ -21,7 +22,7 @@ console.log(avg(numbers));
 
 // }
 
-function avg(num){
-    return average = num.reduce((count,num) => 
-    count+num,0)/num.length;
+function getAvg(sum){
+    return average = sum.reduce((preVal,currVal) => 
+    (preVal+currVal),0)/sum.length;
 }
