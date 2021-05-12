@@ -1,13 +1,12 @@
 let array = ['i', 'love', 'programming'];
 
-console.log(join(array,"0"));
+console.log(joinStrings(array,"0"));
 
 
-function join(arr,char){
+function joinStrings(arr,char){
     let array =  arr.toString();
     if (char == undefined){
         return array;
     }
-        return array.replace(/[',']/g,char);
-     
+        return array.replace(/[',']/g,char);    
 }

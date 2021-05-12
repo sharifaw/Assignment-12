@@ -25,8 +25,8 @@ const inputNumber = prompt("Enter your number");
 //     }   
 // }
 
-nars(inputNumber);
-function nars(item){
+narcissistic(inputNumber);
+function narcissistic(item){
     array = Array.from(String(item), Number);
     let result = 0;
     powarray = array.map((value)=>(value**item.length));
