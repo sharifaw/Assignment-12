@@ -1,4 +1,4 @@
-const input = prompt("Enter your number");
+const inputNumber = prompt("Enter your number");
 
 //let result = 0;
 // for (let count=0; count < input.length; count++) {
@@ -25,17 +25,11 @@ const input = prompt("Enter your number");
 //     }   
 // }
 
-nars(input);
+nars(inputNumber);
 function nars(item){
-    console.log("item 1 ",item);
     array = Array.from(String(item), Number);
     let result = 0;
-    console.log("item 2 ",item);
-    console.log("item Lenght ",item.length);
-    sumArr2 = array.map((value)=>(value**item.length));
-    console.log("sumArr2 ",sumArr2);
-    result = sumArr2.reduce((preVal,currVal)=>(preVal + currVal),0);
-    console.log("result ",result);
-    console.log("item ",item);
+    powarray = array.map((value)=>(value**item.length));
+    result = powarray.reduce((preVal,currVal)=>(preVal + currVal),0);
     return (result === Number(item))? alert("Narcissistic Number"):alert("Not Narcissistic Number");
 }
