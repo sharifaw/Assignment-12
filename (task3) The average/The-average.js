@@ -23,6 +23,6 @@ console.log(getAvg(numbers));
 // }
 
 function getAvg(sum){
-    return average = sum.reduce((preVal,currVal) => 
-    (preVal+currVal),0)/sum.length;
+    return average = sum.reduce((accumulator,currVal) => 
+    (accumulator+currVal),0)/sum.length;
 }
